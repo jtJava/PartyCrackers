@@ -75,10 +75,6 @@
             <id>aikar</id>
             <url>https://repo.aikar.co/content/groups/aikar/</url>
         </repository>
-        <repository>
-            <id>scarsz</id>
-            <url>https://nexus.scarsz.me/content/groups/public/</url>
-        </repository>
     </repositories>
 
     <dependencies>
@@ -97,13 +93,6 @@
             <scope>compile</scope>
         </dependency>
 
-        <!-- Configuration API -->
-        <dependency>
-            <groupId>dev.dejvokep</groupId>
-            <artifactId>boosted-yaml-spigot</artifactId>
-            <version>1.1</version>
-            <scope>compile</scope>
-        </dependency>
         <dependency>
             <groupId>repository.org.projectlombok</groupId>
             <artifactId>lombok</artifactId>

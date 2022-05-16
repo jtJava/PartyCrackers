@@ -3,10 +3,10 @@ crackers:
     ## No spaces in the party cracker's name, otherwise tab completion may break.
     name: DefaultOne
     seconds: 3
-    ## Any particle found at https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Particle.html
+    ## Any particle found at https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Particle.html, this is a list and one will be picked at random
     particleNames:
       - WATER_BUBBLE
-    ## Any sound found at https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Sound.html
+    ## Any sound found at https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Sound.html, this is a list and one will be picked at random
     explosionSoundNames:
       - ENTITY_GENERIC_EXPLODE
     ## Any sound found at https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Sound.html
