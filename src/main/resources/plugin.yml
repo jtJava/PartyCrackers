@@ -1,0 +1,5 @@
+name: PartyCrackers
+version: '${project.version}'
+main: me.jaden.partycrackers.PartyCrackers
+api-version: 1.18
+load: STARTUP

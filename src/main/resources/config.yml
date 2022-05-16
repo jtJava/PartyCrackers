@@ -1,0 +1,68 @@
+crackers:
+  - ==: me.jaden.partycrackers.cracker.Cracker
+    ## No spaces in the party cracker's name, otherwise tab completion may break.
+    name: DefaultOne
+    seconds: 3
+    ## Any particle found at https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Particle.html
+    particleNames:
+      - WATER_BUBBLE
+    ## Any sound found at https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Sound.html
+    explosionSoundNames:
+      - ENTITY_GENERIC_EXPLODE
+    ## Any sound found at https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Sound.html
+    dropSound: BLOCK_TRIPWIRE_CLICK_ON
+    item:
+      ## For serialized items, the only required field is the material name.
+      ==: me.jaden.partycrackers.util.SerializedItem
+      materialName: GOLD_INGOT
+      displayName: "&3Epic Default Item"
+      lore:
+        - "&aThis is super cool"
+        - "&6Epic color coded lore"
+      glow: true
+    rewards:
+      - ==: me.jaden.partycrackers.cracker.CrackerReward
+        chance: 50
+        reward:
+          ## All fields below at optional except for material name.
+          ==: me.jaden.partycrackers.util.SerializedItem
+          materialName: IRON_INGOT
+          amount: 1
+          displayName: "Epic Default Reward"
+          lore:
+            - "&4line 1"
+            - "&2line 2"
+          glow: true
+      - ==: me.jaden.partycrackers.cracker.CrackerReward
+        chance: 50
+        reward:
+          ==: me.jaden.partycrackers.util.SerializedItem
+          materialName: IRON_INGOT
+          glow: true
+  - ==: me.jaden.partycrackers.cracker.Cracker
+    name: DefaultTwo
+    seconds: 3
+    particleNames:
+      - WATER_BUBBLE
+    explosionSoundNames:
+      - ENTITY_GENERIC_EXPLODE
+    dropSound: BLOCK_TRIPWIRE_CLICK_ON
+    item:
+      ==: me.jaden.partycrackers.util.SerializedItem
+      materialName: GOLD_INGOT
+      displayName: "Epic Default Item"
+      lore:
+        - "line 1"
+        - "line 2"
+      glow: false
+    rewards:
+      - ==: me.jaden.partycrackers.cracker.CrackerReward
+        chance: 50
+        reward:
+          ==: me.jaden.partycrackers.util.SerializedItem
+          materialName: DIAMOND
+          displayName: "&5Epic Default Reward"
+          lore:
+            - "&3line 1"
+            - "&8line 2"
+          glow: false
