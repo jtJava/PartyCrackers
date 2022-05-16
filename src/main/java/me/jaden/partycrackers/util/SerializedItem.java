@@ -38,7 +38,6 @@ public class SerializedItem extends ReflectedSerializable {
         if (this.lore != null) builder.lore(this.lore);
         if (this.displayName != null) builder.displayname(this.displayName);
         if (this.glow) builder.glow();
-        if (glow) builder.glow();
 
         ItemStack stack = builder.build();
 

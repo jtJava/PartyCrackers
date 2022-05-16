@@ -624,8 +624,10 @@ public class ItemBuilder {
         if (data != null) {
             item.setData(data);
         }
-        if (enchantments.size() > 0) {
-            item.addUnsafeEnchantments(enchantments);
+        for (Map.Entry<Enchantment, Integer> entry : enchantments.entrySet()) {
+            Enchantment enchant = entry.getKey();
+            Integer level = entry.getValue();
+            meta.addEnchant(enchant, level, true);
         }
         if (displayname != null) {
             meta.displayName(displayname);
